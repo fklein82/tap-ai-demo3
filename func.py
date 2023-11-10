@@ -66,7 +66,7 @@ def main():
             plt.axis('off')
             plt.title(f"Prédiction: {prediction[1]} (Confiance: {prediction[2]*100:.2f}%)")
             plt.show()
-            return f"Prédiction: {prediction[1]} (Confiance: {prediction[2]*100:.2f}%)"
+            return img, f"Prédiction: {prediction[1]} (Confiance: {prediction[2]*100:.2f}%)"
 
         else:
             print("L'image n'a pas pu être téléchargée.")
